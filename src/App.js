@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//N.B importing variable name first letter must be capital
+// SignInWithGoogle is correct but signInWithGoogle isn't correct
+import React from "react";
+import "./App.css";
+import SignInWithGoogle from "./signInWithGoogle";
+import SignInWithFacebook from "./signInWithFacebook";
+import SignWithTwitter from "./signInWithTwitter";
+import SignInWithGithub from "./signInWithGithub";
+import SignInWithEmail from "./signInWithEmail";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 id="header">Login Or Register Yourself</h1>
+
+      <SignInWithGoogle />
+      <SignInWithFacebook />
+      <SignWithTwitter />
+      <SignInWithGithub />
+      <SignInWithEmail />
     </div>
   );
 }
